@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { ResumePageComponent } from './resume-page/resume-page.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ResumePageComponent
   ],
   imports: [
     BrowserModule,
