@@ -2,6 +2,8 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router, NavigationEnd } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-resume-page',
   templateUrl: './resume-page.component.html',
@@ -26,7 +28,7 @@ export class ResumePageComponent implements OnInit {
     });
   }
 
-
+  // scrolls to section
   onAnchorClick ( ) {
     this.route.fragment.subscribe ( f => {
       const element = document.querySelector ( '#' + f );
