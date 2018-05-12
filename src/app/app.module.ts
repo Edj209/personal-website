@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
 import { SmoothScrollDirective, SmoothScrollToDirective } from './ng2-smooth-scroll.directive';
+import { BlogPageComponent } from './blog-page/blog-page.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SmoothScrollDirective, SmoothScrollToDirective } from './ng2-smooth-scr
     AppComponent,
     ResumePageComponent,
     SmoothScrollToDirective,
-    SmoothScrollDirective
+    SmoothScrollDirective,
+    BlogPageComponent
   ],
   imports: [
     BrowserModule,
