@@ -10,6 +10,7 @@ import { SmoothScrollDirective, SmoothScrollToDirective } from './ng2-smooth-scr
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { BlogService } from './shared/blog/blog.service';
 import { PostPageComponent } from './post-page/post-page.component';
+import { BlogPostService } from './shared/blog/blog-post.service';
 
 
 @NgModule({
@@ -26,7 +27,10 @@ import { PostPageComponent } from './post-page/post-page.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [BlogService],
+  providers: [
+    BlogService,
+    BlogPostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
