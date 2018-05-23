@@ -20,7 +20,7 @@ export class PostPageComponent implements OnInit {
   }
 
   gotoBlog() {
-    this.router.navigate(['blog-page']);
+    this.router.navigate(['/blog-page']);
   }
 
   save(form: NgForm) {
