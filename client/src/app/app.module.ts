@@ -9,6 +9,7 @@ import { ResumePageComponent } from './resume-page/resume-page.component';
 import { SmoothScrollDirective, SmoothScrollToDirective } from './ng2-smooth-scroll.directive';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { BlogService } from './shared/blog/blog.service';
+import { PostPageComponent } from './post-page/post-page.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BlogService } from './shared/blog/blog.service';
     ResumePageComponent,
     SmoothScrollToDirective,
     SmoothScrollDirective,
-    BlogPageComponent
+    BlogPageComponent,
+    PostPageComponent
   ],
   imports: [
     BrowserModule,
