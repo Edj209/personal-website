@@ -50,20 +50,25 @@
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-lg">Post Title</span>
       </div>
-      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+      <!-- hidden id input -->
+
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+       [(ngModel)]="posts.postTitle" name="postTitle">
     </div>
 
     <div class="input-group mb-3 container">
       <div class="input-group-prepend">
         <span class="input-group-text" id="inputGroup-sizing-default">Post Description</span>
       </div>
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+      [(ngModel)]="posts.titleDescription" name="postDescription">
     </div>
 
     <div class="form-group container">
       <label for="exampleFormControlTextarea1">Post Content</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Example</textarea>
-      <button type="button" class="btn btn-primary col-md-1 offset-md-11">Post</button>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
+      [(ngModel)]="posts.postContent" name="postContent">Example</textarea>
+      <button type="submit" class="btn btn-primary col-md-1 offset-md-11">Post</button>
     </div>
   </form>
 </body>
