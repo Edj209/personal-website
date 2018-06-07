@@ -2,11 +2,7 @@ package blogBackend;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.*;
 
 import blogBackend.Posts;
 import blogBackend.PostsRepository;
@@ -22,6 +18,11 @@ public class BlogController {
     @GetMapping(path = "/all")
     public @ResponseBody Iterable<Posts> getAllPosts() {
         return postsRepository.findAll();
+    }
+
+    @PostMapping(path = "/post")
+    public void addPost(@RequestBody Posts post) {
+        postsRepository.save(post);
     }
 
 }

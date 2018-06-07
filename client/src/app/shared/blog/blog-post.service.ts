@@ -6,7 +6,7 @@ import { Observable } from 'rxjs/Observable';
 export class BlogPostService {
 
   public API = '//localhost:8080';
-  public BLOG_API = this.API + '/blog';
+  public BLOG_API = this.API + '/blog/post';
 
   constructor(private http: HttpClient) { }
 
